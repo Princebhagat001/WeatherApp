@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="PrinceBhagat_2603801.css" />
+</head>
+
+<body>
+  <main class="main-container">
+    <!-- serach button start -->
+    <header class="input-container">
+      <input class="city-input" type="text" placeholder="Search city..." />
+      <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </header>
+     <!-- serach button end -->
+    
+      <!-- Weather condition start -->
+    <section class="weather-info" id="weather-display">
+      <!-- Date & Time -->
+      <div class="location-date-container">
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4 class="country-txt">North Lanarkshire</h4>
+        </div>
+
+        <div class="date-time">
+          <h5 class="current-date-txt">Thu, 10 Dec</h5>
+        </div>
+      </div>
+
+      <!-- Weather informations start -->
+      <div class="weather-summary-container">
+        <img
+          id="weather-icon"
+          src="https://openweathermap.org/img/wn/01d@2x.png"
+          alt="Weather Icon"
+        />
+
+        <div class="weather-summary-info">
+          <h1 class="temp-txt">29°C</h1>
+          <h3 class="condition-txt">Clear</h3>
+        </div>
+      </div>
+
+      <div class="weather-conditions-container">
+        <div class="condition-item">
+          <i class="fa-solid fa-droplet"></i>
+          <div>
+            <span>Humidity</span>
+            <strong class="humidity-value-txt">55%</strong>
+          </div>
+        </div>
+
+        <div class="condition-item">
+          <i class="fa-solid fa-wind"></i>
+          <div>
+            <span>Wind</span>
+            <strong class="wind-speed-value-txt">2 m/s</strong>
+          </div>
+        </div>
+
+        <div class="condition-item">
+          <i class="fa-solid fa-compass"></i>
+          <div>
+            <span>Direction</span>
+            <strong class="wind-direction-value-txt">E</strong>
+          </div>
+        </div>
+
+        <div class="condition-item">
+          <i class="fa-solid fa-gauge-high"></i>
+          <div>
+            <span>Pressure</span>
+            <strong class="pressure-value-txt">1013 hPa</strong>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Weather condition ends -->
+    </section>
+  </main>
+</body>
+<script src="PrinceBhagat_2603801.js"></script>
+</html>
